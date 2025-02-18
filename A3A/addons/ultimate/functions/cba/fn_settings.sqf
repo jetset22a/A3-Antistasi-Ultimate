@@ -90,6 +90,15 @@
     }
 ] call CBA_fnc_addSetting;
 
+[
+        "A3U_setting_userAddedCivilianUniforms", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting
+        "EDITBOX", // setting type
+        "War Level For Invader Punishments", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+        "Antistasi Ultimate", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+        ["-test editbox-", "-tooltip-"],
+        "defaultValue"
+] call CBA_fnc_addSetting;
+
 if (["tts_emission"] call A3U_fnc_hasAddon) then {
     [
         "A3U_setting_emissionMinimum", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
